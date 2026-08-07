@@ -27,11 +27,14 @@ h1 { font-size: clamp(3rem, 7vw, 5.6rem); line-height: .98; margin: .4rem 0 1.2r
 h2 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.12; margin: .35rem 0 1.4rem; letter-spacing: -.025em; }
 h3 { margin-top: 0; margin-bottom: .35rem; }
 .lead { font-size: 1.25rem; color: var(--muted); max-width: 760px; }
-.actions { display: flex; gap: .8rem; flex-wrap: wrap; margin-top: 2rem; }
+.actions { display: flex; gap: .8rem; flex-wrap: wrap; margin-top: 2rem; align-items: center; }
 .actions.centered { justify-content: center; }
 .button { display: inline-block; padding: .78rem 1.05rem; border: 1px solid var(--border); border-radius: 9px; background: #fff; text-decoration: none; font-weight: 700; }
 .button.primary { background: var(--accent); color: white; border-color: var(--accent); }
 .button.primary:hover { background: var(--accent-dark); }
+.icon-button { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; flex: 0 0 44px; border: 1px solid var(--border); border-radius: 50%; background: #fff; color: var(--text); text-decoration: none; transition: transform .18s ease, background .18s ease, color .18s ease, border-color .18s ease; }
+.icon-button svg { width: 20px; height: 20px; display: block; fill: currentColor; }
+.icon-button:hover { transform: translateY(-2px); background: var(--accent); color: #fff; border-color: var(--accent); }
 .profile-card,.card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; box-shadow: 0 8px 28px rgba(31,41,51,.05); }
 .profile-card { overflow: hidden; }
 .profile-photo { display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; }
