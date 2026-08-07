@@ -77,6 +77,9 @@ p { font-size: 16px; }
 .experience-panel .meta { color: var(--muted); }
 #about { padding-top: 1.35rem; padding-bottom: 1.35rem; }
 #experience { padding-top: 0; }
+#research > .container > .section-title,
+#publications > .container > .section-title,
+#contact > .container > .section-title { margin-left: 1.7rem; }
 .timeline { display: grid; gap: 0; }
 .timeline article { display: grid; grid-template-columns: 300px 1fr; gap: 2rem; padding: 1.5rem 0; border-top: 1px solid var(--border); }
 .timeline article:first-child { border-top: 0; padding-top: 0; }
