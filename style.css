@@ -16,9 +16,9 @@
 }
 :root {
   --bg: #3F474D;
-  --surface: #F0EADF;
+  --surface: #F7F4EC;
   --surface-dark: #353C41;
-  --text: #F0EADF;
+  --text: #F7F4EC;
   --surface-text: #161616;
   --muted: #CFC8BC;
   --surface-muted: #62676B;
@@ -26,7 +26,7 @@
   --slate: #3F474D;
   --accent: #E94E1B;
   --accent-light: #EF7238;
-  --border: rgba(240,234,223,.22);
+  --border: rgba(247,244,236,.22);
   --surface-border: #D8D2C8;
   --max: 1120px;
 }
@@ -68,6 +68,8 @@ p { font-size: 16px; }
 .timeline { display: grid; gap: 0; }
 .timeline article { display: grid; grid-template-columns: 300px 1fr; gap: 2rem; padding: 1.5rem 0; border-top: 1px solid var(--border); }
 .timeline article:first-child { border-top: 0; padding-top: 0; }
+.timeline ul { margin: 0; padding-left: 1.2rem; }
+.timeline li + li { margin-top: .45rem; }
 .cards { display: grid; gap: 1.35rem; }
 .cards.three { grid-template-columns: repeat(3,1fr); }
 .cards.two { grid-template-columns: repeat(2,1fr); }
