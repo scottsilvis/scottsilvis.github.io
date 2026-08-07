@@ -68,11 +68,17 @@
     <section id="publications" class="section light-section">
       <div class="container">
         <h2 class="section-title">Recent Publications</h2>
-        <div class="cards two publication-cards">
-          <a class="card" href="https://pubmed.ncbi.nlm.nih.gov/42431124/" target="_blank" rel="noopener"><h3>Assessment of interferon-γ response profiles after vaccination against bovine viral diarrhea virus (BVDV) as correlates of protection</h3><p class="meta">Veterinary Immunology and Immunopathology · 2026</p></a>
-          <a class="card" href="https://pubmed.ncbi.nlm.nih.gov/41192064/" target="_blank" rel="noopener"><h3>Colostrum-derived immunity reduces detection of calves persistently infected with bovine viral diarrhea virus by common diagnostic tests</h3><p class="meta">Journal of the American Veterinary Medical Association · 2026</p></a>
-          <a class="card" href="https://pubmed.ncbi.nlm.nih.gov/41356484/" target="_blank" rel="noopener"><h3>Ear tissue as a diagnostic sample for pestivirus detection in semi-domesticated Eurasian tundra reindeer</h3><p class="meta">Frontiers in Microbiology · 2025</p></a>
-          <a class="card" href="https://pubmed.ncbi.nlm.nih.gov/38422620/" target="_blank" rel="noopener"><h3>Intranasal booster vaccination of beef steers reduces clinical signs following experimental coinfection with BRSV and BHV-1</h3><p class="meta">American Journal of Veterinary Research · 2024</p></a>
+        <div class="publications-shell">
+          <div class="publication-track" id="publication-track">
+            <a class="card" href="https://pubmed.ncbi.nlm.nih.gov/42431124/" target="_blank" rel="noopener"><h3>Assessment of interferon-γ response profiles after vaccination against bovine viral diarrhea virus (BVDV) as correlates of protection</h3><p class="meta">Veterinary Immunology and Immunopathology · 2026</p></a>
+            <a class="card" href="https://pubmed.ncbi.nlm.nih.gov/41192064/" target="_blank" rel="noopener"><h3>Colostrum-derived immunity reduces detection of calves persistently infected with bovine viral diarrhea virus by common diagnostic tests</h3><p class="meta">Journal of the American Veterinary Medical Association · 2026</p></a>
+            <a class="card" href="https://pubmed.ncbi.nlm.nih.gov/41356484/" target="_blank" rel="noopener"><h3>Ear tissue as a diagnostic sample for pestivirus detection in semi-domesticated Eurasian tundra reindeer</h3><p class="meta">Frontiers in Microbiology · 2025</p></a>
+            <a class="card" href="https://pubmed.ncbi.nlm.nih.gov/38422620/" target="_blank" rel="noopener"><h3>Intranasal booster vaccination of beef steers reduces clinical signs following experimental coinfection with BRSV and BHV-1</h3><p class="meta">American Journal of Veterinary Research · 2024</p></a>
+          </div>
+          <div class="publication-controls" aria-label="Publication navigation">
+            <button class="scroll-button" type="button" data-scroll="-1" aria-label="Previous publications">←</button>
+            <button class="scroll-button" type="button" data-scroll="1" aria-label="Next publications">→</button>
+          </div>
         </div>
         <a class="text-link" href="https://scholar.google.com/citations?user=6Gd1yj0AAAAJ&hl=en" target="_blank" rel="noopener">View all publications on Google Scholar →</a>
       </div>
@@ -118,5 +124,14 @@
   </main>
 
   <footer><div class="container">© 2026 Scott Silvis · Built with GitHub Pages</div></footer>
+  <script>
+    const publicationTrack = document.getElementById('publication-track');
+    document.querySelectorAll('.scroll-button').forEach((button) => {
+      button.addEventListener('click', () => {
+        const direction = Number(button.dataset.scroll);
+        publicationTrack.scrollBy({ left: publicationTrack.clientWidth * 0.75 * direction, behavior: 'smooth' });
+      });
+    });
+  </script>
 </body>
 </html>
