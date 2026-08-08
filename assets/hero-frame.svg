@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" preserveAspectRatio="none">
+  <g fill="none" stroke-linecap="square" stroke-linejoin="miter" vector-effect="non-scaling-stroke">
+    <path stroke="#F7F4EC" stroke-opacity="0.82" stroke-width="1.4" d="M18 6H77L87 16H1113L1123 6H1182L1194 18V482L1182 494H1123L1113 484H87L77 494H18L6 482V18Z"/>
+    <path stroke="#EF7238" stroke-opacity="0.34" stroke-width="1" d="M31 18H72L82 28H1118L1128 18H1169L1182 31V469L1169 482H1128L1118 472H82L72 482H31L18 469V31Z"/>
+
+    <path stroke="#F7F4EC" stroke-opacity="0.95" stroke-width="1.7" d="M18 6H64L72 14H88M18 6V52L26 60V78"/>
+    <path stroke="#F7F4EC" stroke-opacity="0.95" stroke-width="1.7" d="M1182 6H1136L1128 14H1112M1182 6V52L1174 60V78"/>
+    <path stroke="#F7F4EC" stroke-opacity="0.95" stroke-width="1.7" d="M18 494H64L72 486H88M18 494V448L26 440V422"/>
+    <path stroke="#F7F4EC" stroke-opacity="0.95" stroke-width="1.7" d="M1182 494H1136L1128 486H1112M1182 494V448L1174 440V422"/>
+
+    <path stroke="#EF7238" stroke-opacity="0.72" stroke-width="1.15" d="M25 15H58L66 23H84M25 15V48L33 56V70"/>
+    <path stroke="#EF7238" stroke-opacity="0.72" stroke-width="1.15" d="M1175 15H1142L1134 23H1116M1175 15V48L1167 56V70"/>
+    <path stroke="#EF7238" stroke-opacity="0.72" stroke-width="1.15" d="M25 485H58L66 477H84M25 485V452L33 444V430"/>
+    <path stroke="#EF7238" stroke-opacity="0.72" stroke-width="1.15" d="M1175 485H1142L1134 477H1116M1175 485V452L1167 444V430"/>
+
+    <path stroke="#F7F4EC" stroke-opacity="0.52" stroke-width="1" d="M92 28H1094M92 472H1094"/>
+    <path stroke="#F7F4EC" stroke-opacity="0.38" stroke-width="1" d="M31 88V412M1169 88V412"/>
+  </g>
+</svg>
