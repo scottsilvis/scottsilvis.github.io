@@ -2,43 +2,22 @@
   position: relative;
   isolation: isolate;
   padding: 2.15rem 2.35rem;
-  border: 1px solid rgba(247,244,236,.42);
+  border: 0;
   clip-path: none;
-}
-
-.hero-grid::before,
-.hero-grid::after {
-  content: "";
-  position: absolute;
-  pointer-events: none;
-  z-index: 3;
-  background: transparent;
-  clip-path: none;
-  box-shadow: none;
 }
 
 .hero-grid::before {
-  inset: 8px;
-  border: 1px solid rgba(239,114,56,.28);
-}
-
-.hero-grid::after {
+  content: "";
+  position: absolute;
   inset: 0;
-  background:
-    linear-gradient(var(--accent-light),var(--accent-light)) left 10px top 10px / 34px 1px no-repeat,
-    linear-gradient(var(--accent-light),var(--accent-light)) left 10px top 10px / 1px 34px no-repeat,
-    linear-gradient(var(--accent-light),var(--accent-light)) right 10px top 10px / 34px 1px no-repeat,
-    linear-gradient(var(--accent-light),var(--accent-light)) right 10px top 10px / 1px 34px no-repeat,
-    linear-gradient(var(--accent-light),var(--accent-light)) left 10px bottom 10px / 34px 1px no-repeat,
-    linear-gradient(var(--accent-light),var(--accent-light)) left 10px bottom 10px / 1px 34px no-repeat,
-    linear-gradient(var(--accent-light),var(--accent-light)) right 10px bottom 10px / 34px 1px no-repeat,
-    linear-gradient(var(--accent-light),var(--accent-light)) right 10px bottom 10px / 1px 34px no-repeat;
-  opacity: .72;
+  z-index: 3;
+  pointer-events: none;
+  background: url("assets/hero-frame.svg") center / 100% 100% no-repeat;
 }
 
+.hero-grid::after { content: none; }
 .hero-grid > * { position: relative; z-index: 4; }
 
 @media (max-width: 820px) {
   .hero-grid { padding: 1.65rem; }
-  .hero-grid::before { inset: 6px; }
 }
