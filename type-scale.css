@@ -1,22 +1,22 @@
 /* Global typography scale refinement */
-body { font-size: 14px; }
+body { font-size: 13px; }
 
-.brand span { font-size: 16px; }
-.brand small { font-size: 10.5px; }
-nav a { font-size: .84rem; }
+.brand span { font-size: 13px; }
+.brand small { margin-top: 1px; font-size: 8.5px; }
+nav a { font-size: 11px; }
 
-.hero h1 { font-size: clamp(2.05rem, 3.6vw, 3rem); }
-.hero-title { font-size: 15px; }
-.hero-copy p { font-size: 13.5px; }
+.hero h1 { font-size: clamp(1.85rem, 3vw, 2.45rem); }
+.hero-title { font-size: 13px; }
+.hero-copy p { font-size: 12px; }
 
-.section-title { font-size: 21px; }
-h3 { font-size: 17px; }
-p { font-size: 14px; }
+.section-title { font-size: 18px; }
+h3 { font-size: 15px; }
+p { font-size: 13px; }
 
-.publication-track .card h3 { font-size: 13.5px; }
-.publication-track .card .meta { font-size: 12.5px; }
+.publication-track .card h3 { font-size: 12px; }
+.publication-track .card .meta { font-size: 11px; }
 .education-entry p,
-.skill-group p { font-size: 13px; }
+.skill-group p { font-size: 12px; }
 .certificate-strip h3,
-.skill-group h3 { font-size: 12.5px; }
-footer { font-size: .8rem; }
+.skill-group h3 { font-size: 11px; }
+footer { font-size: .72rem; }
