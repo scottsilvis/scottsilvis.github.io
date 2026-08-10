@@ -1,0 +1,22 @@
+/* Global typography scale refinement */
+body { font-size: 14px; }
+
+.brand span { font-size: 16px; }
+.brand small { font-size: 10.5px; }
+nav a { font-size: .84rem; }
+
+.hero h1 { font-size: clamp(2.05rem, 3.6vw, 3rem); }
+.hero-title { font-size: 15px; }
+.hero-copy p { font-size: 13.5px; }
+
+.section-title { font-size: 21px; }
+h3 { font-size: 17px; }
+p { font-size: 14px; }
+
+.publication-track .card h3 { font-size: 13.5px; }
+.publication-track .card .meta { font-size: 12.5px; }
+.education-entry p,
+.skill-group p { font-size: 13px; }
+.certificate-strip h3,
+.skill-group h3 { font-size: 12.5px; }
+footer { font-size: .8rem; }
