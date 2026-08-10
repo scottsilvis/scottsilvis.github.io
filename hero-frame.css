@@ -9,7 +9,7 @@
 .hero-grid::before {
   content: "";
   position: absolute;
-  inset: 0;
+  inset: 4px;
   z-index: 3;
   pointer-events: none;
   background: url("assets/hero-frame.svg") center / 100% 100% no-repeat;
@@ -20,4 +20,5 @@
 
 @media (max-width: 820px) {
   .hero-grid { padding: 1.65rem; }
+  .hero-grid::before { inset: 3px; }
 }
