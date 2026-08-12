@@ -80,7 +80,7 @@ a.card:hover { transform: translateY(-3px); border-color: var(--accent); box-sha
 
 footer { border-top: 0; overflow: hidden; }
 footer .container { position: relative; min-height: 58px; display: flex; align-items: center; padding-right: 78px; }
-footer .container::after { content: ""; position: absolute; right: 4px; top: 50%; width: 62px; height: 62px; transform: translateY(-50%); background: url("assets/glyph-light.svg") center / contain no-repeat; opacity: .12; }
+footer .container::after { content: ""; position: absolute; right: 4px; top: 50%; width: 62px; height: 62px; transform: translateY(-50%); background: url("assets/glyph-orange.svg") center / contain no-repeat; opacity: .72; }
 
 @media (max-width: 1000px) {
   .research-cards { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
