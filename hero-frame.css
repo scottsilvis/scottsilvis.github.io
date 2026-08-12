@@ -63,7 +63,28 @@ p { line-height: 1.5; }
 .actions { margin-top: .45rem; gap: .45rem; }
 .icon-button { width: 31px; height: 31px; }
 .icon-button svg { width: 14px; height: 14px; }
-.hero-photo { width: min(165px, 100%); border: 2px solid var(--accent); box-shadow: 0 10px 24px rgba(11,11,11,.2); }
+.hero-photo-wrap { position: relative; isolation: isolate; }
+.hero-photo-wrap::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  right: -51px;
+  top: 50%;
+  width: 267px;
+  height: 267px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  background: url("assets/portrait-ring.svg") center / contain no-repeat;
+}
+.hero-photo {
+  position: relative;
+  z-index: 1;
+  width: min(165px, 100%);
+  border: 0;
+  box-shadow: 0 10px 24px rgba(11,11,11,.2);
+  -webkit-mask-image: radial-gradient(circle, #000 0 91%, rgba(0,0,0,.9) 94%, transparent 100%);
+  mask-image: radial-gradient(circle, #000 0 91%, rgba(0,0,0,.9) 94%, transparent 100%);
+}
 
 #about { position: relative; z-index: 2; margin-top: -7rem; padding-top: 8.5rem; background: transparent; }
 #about .about-card { position: relative; z-index: 2; }
@@ -94,6 +115,7 @@ footer .container::after { content: ""; position: absolute; right: 4px; top: 50%
   .hero::after { bottom: -9rem; height: 2.25rem; }
   .hero-grid { padding: 1.25rem; gap: 1.35rem; }
   .hero-photo { width: 175px; }
+  .hero-photo-wrap::after { left: -54px; right: auto; width: 283px; height: 283px; }
   #about { margin-top: -5rem; padding-top: 6.5rem; }
 }
 
