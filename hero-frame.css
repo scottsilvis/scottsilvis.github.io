@@ -35,7 +35,7 @@ p { line-height: 1.5; }
   inset: 0 0 -12rem;
   pointer-events: none;
   background-image: url("assets/hero-tech-bg-v3.webp");
-  background-size: max(100vw, 2400px) auto;
+  background-size: 100% 100%;
   background-position: center top;
   background-repeat: no-repeat;
   background-color: var(--slate);
