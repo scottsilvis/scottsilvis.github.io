@@ -6,8 +6,8 @@
 
 .site-header { border-bottom: 0; }
 .nav-wrap { min-height: 48px; gap: 1.35rem; }
-.brand { position: relative; padding-left: 34px; min-height: 28px; justify-content: center; }
-.brand::before { content: ""; position: absolute; left: 0; top: 50%; width: 26px; height: 26px; transform: translateY(-50%); background: url("assets/glyph-light.svg") center / contain no-repeat; opacity: .96; }
+.brand { position: relative; padding-left: 48px; min-height: 40px; justify-content: center; }
+.brand::before { content: ""; position: absolute; left: 0; top: 50%; width: 40px; height: 40px; transform: translateY(-50%); background: url("assets/glyph-orange.svg") center / contain no-repeat; opacity: 1; }
 .brand small { font-size: 11.5px; }
 nav { position: relative; gap: 1.2rem; padding: 0 0 11px; align-items: center; }
 nav::after { content: ""; position: absolute; left: 0; right: 0; bottom: 4px; height: 1px; background: rgba(239,114,56,.65); }
@@ -98,6 +98,6 @@ footer .container::after { content: ""; position: absolute; right: 4px; top: 50%
 
 @media (max-width: 620px) {
   .research-cards { grid-template-columns: 1fr !important; }
-  .brand { padding-left: 31px; }
-  .brand::before { width: 23px; height: 23px; }
+  .brand { padding-left: 44px; min-height: 38px; }
+  .brand::before { width: 36px; height: 36px; }
 }
